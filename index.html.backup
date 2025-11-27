@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta http-equiv="refresh" content="0; url=https://jacek-flak.com"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, nice to see you 👋</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2699.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-sKJG_LO2hs9UKoP1LDe5Z.js"></script>
+    <script>
+        window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }, plausible.init = plausible.init || function (i) { plausible.o = i || {} };
+        plausible.init()
+    </script>
+</head>
+
+<body>
+    <nav class="side-menu">
+        <ul>
+            <li><a href="#about">About</a></li>           
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="terminal-header">
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <div class="terminal-bar">
+            <span class="dot turquoise"></span>
+            <span class="dot green"></span>
+            <span class="dot gray"></span>
+        </div>
+        <h1 class="typing">Jacek Flak</h1>
+        <p class="subtitle">Developer | SysOps | Support Specialist</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>👤 About Me</h2>
+            <p class="about-text">I can confidently describe myself as a dedicated Support Engineer Specialist and a true team player,
+                with over 5 years of IT experience in the Big Pharma industry and the last 2 years in the automotive
+                sector. I have a Master of Science in Computer Science and I’m an open-minded person who easily connects
+                with others,
+                enjoys meeting new people, and values teamwork. In today’s world shaped by AI and automation,
+                I truly believe that strong soft skills are just as essential as technical expertise.<br><br>
+
+                My passion lies in cloud technologies, infrastructure as code, and web development. I’m constantly
+                seeking to expand my knowledge and skills in these areas. <br><br>
+                In free time I enjoy keep my Strava updated with running activities. Also I like fishing and watching football.<br><br>
+                Feel free to reach out! I’m always open to new challenges and conversations!
+            </p>
+        </section>
+        <section id="skills">
+            <h2>🛠️ Skills</h2>
+            <ul class="skills-list">
+                <li class="animated-skill">AWS</li>
+                <li class="animated-skill">SQL</li>
+                <li class="animated-skill">Linux</li>
+                <li class="animated-skill">Prometheus, Grafana, Kibana</li>
+                <li class="animated-skill">Kubernetes, ArgoCD</li>
+                <li class="animated-skill">CI/CD, GitHub Actions</li>
+                <li class="animated-skill">Java</li>
+                <li class="animated-skill">Web design</li>   
+                <li class="animated-skill">Atlassian stack, ServiceNow</li>
+                <li class="animated-skill">ITIL certified</li>          
+            </ul>
+        </section>
+        <section id="experience">
+            <h2>💼 Experience</h2>
+            <ul>
+                <li><strong>Service Engineer</strong> - ConSol Software GmbH (2024-Present)</li>
+                <div class="code-flow">
+                    <div class="code-line">• Resolving critical system outages efficiently by following established
+                        incident response processes.</div>
+                    <div class="code-line">• Monitoring and analyzing application logs to ensure system stability and
+                        performance.</div>
+                    <div class="code-line">• Deploying infrastructure and services changes.</div>
+                    <div class="code-line">• Keeping documentation accurate and up to date.</div>
+                    <div class="code-line">• Collaborating with L3 and Vendors to resolve application issues.</div>
+                    <div class="code-line">• Participating in weekly on-call rotations to provide 24/7 support.</div>
+                </div>
+                <li><strong>3rd Line Support Specialist</strong> - Billennium S.A. (2020-2024)</li>
+                <br>
+                <div class="code-flow">
+                    <div class="code-line">• Bug fixing, creating new backend and frontend features in web app
+                        applications</div>
+                    <div class="code-line">• Preparing application packages for deployments, certificate configuration
+                    </div>
+                    <div class="code-line">• Monitoring application logs and reviewing errors</div>
+                    <div class="code-line">• The creation of SQL scripts and views for business</div>
+                    <div class="code-line">• Creating technical documentation, functional specification, and keeping
+                        Confluence up to date</div>
+                </div>
+                <li><strong>2nd Line Support Specialist</strong> - Billennium S.A. (2018-2020)</li>
+                <br>
+                <div class="code-flow">
+                    <div class="code-line">• Provide support for problems and incident management for international end
+                        users</div>
+                    <div class="code-line">• Working and communicating with business owners and 3rd Line Support
+                        Team members during the problem management life-cycle </div>
+                    <div class="code-line">• categorizing and prioritizing problems during the application management
+                        life cycle</div>
+                    <div class="code-line">• Monitoring the application’s functioning</div>
+                    <div class="code-line">• Identification of workarounds and resolutions for problems</div>
+                    <div class="code-line">• Creating and documenting problem resolutions and workaround</div>
+                    <div class="code-line">• Granting permissions and analyzing data</div>
+                </div>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>✉️ Contact</h2>
+            <div class="contact-icons" align="center">
+                <a href="https://www.linkedin.com/in/jacek-flak/" target="_blank" class="contact-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        width="150" height="150" alt="LinkedIn" class="icon" />
+                    <!-- <span>linkedin.com/in/jacek-flak</span> -->
+                </a>
+                <a href="mailto:jacek.flak.kontakt@gmail.com" class="contact-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" width="150"
+                        height="150" alt="Gmail" class="icon" />
+                    <!-- <span>jacek.flak.kontakt@gmail.com</span> -->
+                </a>
+                <a href="https://github.com/JacekFlak" target="_blank" class="contact-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="150"
+                        height="150" alt="GitHub" class="icon" />
+                    <!-- <span>github.com/JacekFlak</span> -->
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>⚙️ This static website is hosted on AWS using Amazon S3, CloudFront and ACM ☁️</p>
+        <p>&copy; 2025 Jacek Flak. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

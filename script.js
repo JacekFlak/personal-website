@@ -51,10 +51,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe About section
-const aboutText = document.querySelector('.about-text');
-if (aboutText) {
-    observer.observe(aboutText);
+// Observe About section - observe each paragraph separately
+const aboutParas = document.querySelectorAll('.about-text');
+if (aboutParas.length > 0) {
+    aboutParas.forEach(para => {
+        observer.observe(para);
+    });
 }
 
 // Observe Skills section
@@ -62,3 +64,27 @@ const skillsSection = document.querySelector('#skills');
 if (skillsSection) {
     observer.observe(skillsSection);
 }
+
+// Collapsible job descriptions
+const jobHeaders = document.querySelectorAll('.job-header');
+jobHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+        const jobItem = this.parentElement;
+        const description = jobItem.querySelector('.job-description');
+        const isExpanded = description.classList.contains('expanded');
+        
+        // Close all other job descriptions
+        document.querySelectorAll('.job-description').forEach(desc => {
+            desc.classList.remove('expanded');
+        });
+        document.querySelectorAll('.job-header').forEach(h => {
+            h.classList.remove('active');
+        });
+        
+        // Toggle current description
+        if (!isExpanded) {
+            description.classList.add('expanded');
+            this.classList.add('active');
+        }
+    });
+});
