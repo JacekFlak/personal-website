@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- <meta http-equiv="refresh" content="0; url=https://jacek-flak.com"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello, nice to see you 👋</title>
@@ -15,14 +14,16 @@
 <body>
     <nav class="side-menu">
         <ul>
-            <li><a href="#about">About</a></li>           
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-en="About" data-pl="O mnie">About</a></li>           
+            <li><a href="#skills" data-en="Skills" data-pl="Umiejętności">Skills</a></li>
+            <li><a href="#experience" data-en="Experience" data-pl="Doświadczenie">Experience</a></li>
+            <li><a href="#projects" data-en="Projects" data-pl="Projekty">Projects</a></li>
+            <li><a href="#contact" data-en="Contact" data-pl="Kontakt">Contact</a></li>
         </ul>
     </nav>
     <header class="terminal-header">
         <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button id="lang-toggle" aria-label="Toggle language"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1f5-1f1f1.svg" alt="PL" class="flag-icon"></button>
         <div class="terminal-bar">
             <span class="dot turquoise"></span>
             <span class="dot green"></span>
@@ -33,35 +34,72 @@
     </header>
     <main>
         <section id="about">
-            <h2>👤 About Me</h2>
-            <p class="about-text about-para-1">I can confidently describe myself as a dedicated Support Engineer Specialist and a true team player,
+            <h2 data-en="👤 About me" data-pl="👤 O mnie">👤 About me</h2>
+            <p class="about-text about-para-1" data-en="I can confidently describe myself as a dedicated Support Engineer Specialist and a true team player, with over 5 years of IT experience in the Big Pharma industry and the last 2 years in the automotive sector. I have a Master of Science in Computer Science, and I'm an open-minded person who easily connects with others, enjoys meeting new people, and values teamwork. In today's world shaped by AI and automation, I truly believe that strong soft skills are just as essential as technical expertise." data-pl="Mogę śmiało opisać siebie jako oddanego specjalistę ds. wsparcia technicznego i prawdziwego gracza zespołowego, z ponad 5-letnim doświadczeniem w branży Big Pharma i ostatnimi 2 latami w sektorze motoryzacyjnym. Posiadam tytuł magistra informatyki i jestem osobą otwartą, która łatwo nawiązuje kontakty, lubi poznawać nowych ludzi i ceni pracę zespołową. W dzisiejszym świecie kształtowanym przez AI i automatyzację wierzę, że umiejętności miękkie są równie ważne jak wiedza techniczna.">I can confidently describe myself as a dedicated Support Engineer Specialist and a true team player,
                 with over 5 years of IT experience in the Big Pharma industry and the last 2 years in the automotive
-                sector. I have a Master of Science in Computer Science and I'm an open-minded person who easily connects
-                with others,
-                enjoys meeting new people, and values teamwork. In today's world shaped by AI and automation,
+                sector. I have a Master of Science in Computer Science, and I'm an open-minded person who easily connects
+                with others, enjoys meeting new people, and values teamwork. In today's world shaped by AI and automation,
                 I truly believe that strong soft skills are just as essential as technical expertise.</p>
-            <p class="about-text about-para-2">My passion lies in cloud technologies, infrastructure as code, and web development. I'm constantly
+            <p class="about-text about-para-2" data-en="My passions lie in cloud technologies, infrastructure-as-code, and web development. I'm constantly seeking to expand my knowledge and skills in these areas." data-pl="Moje pasje to technologie chmurowe, infrastruktura jako kod i tworzenie stron internetowych. Nieustannie staram się poszerzać swoją wiedzę i umiejętności w tych dziedzinach.">My passions lie in cloud technologies, infrastructure-as-code, and web development. I'm constantly
                 seeking to expand my knowledge and skills in these areas.</p>
-            <p class="about-text about-para-3">In free time I enjoy keep my Strava updated with running activities. Also I like fishing and watching football.</p>
-            <p class="about-text about-para-4">Feel free to reach out! I'm always open to new challenges and conversations!</p>
+            <p class="about-text about-para-3" data-en="In my free time, I enjoy keeping my Strava updated with running activities. Also, I like fishing and watching football." data-pl="W wolnym czasie lubię aktualizować swoją Stravę o aktywności biegowe. Lubię też wędkowanie i oglądanie piłki nożnej.">In my free time, I enjoy keeping my Strava updated with running activities. Also, I like fishing and watching football.</p>
+            <p class="about-text about-para-4" data-en="Feel free to reach out! I'm always open to new challenges and conversations!" data-pl="Śmiało się odezwij! Jestem zawsze otwarty na nowe wyzwania i rozmowy!">Feel free to reach out! I'm always open to new challenges and conversations!</p>
         </section>
         <section id="skills">
-            <h2>🛠️ Skills</h2>
-            <ul class="skills-list">
-                <li class="animated-skill">AWS</li>
-                <li class="animated-skill">SQL</li>
-                <li class="animated-skill">Linux</li>
-                <li class="animated-skill">Prometheus, Grafana, Kibana</li>
-                <li class="animated-skill">Kubernetes, ArgoCD</li>
-                <li class="animated-skill">CI/CD, GitHub Actions</li>
-                <li class="animated-skill">Java</li>
-                <li class="animated-skill">Web design</li>   
-                <li class="animated-skill">Atlassian stack, ServiceNow</li>
-                <li class="animated-skill">ITIL certified</li>          
-            </ul>
+            <h2 data-en="🛠️ Skills" data-pl="🛠️ Umiejętności">🛠️ Skills</h2>
+            
+            <div class="skills-category">
+                <h3 data-en="☁️ Cloud & Infrastructure" data-pl="☁️ Chmura i Infrastruktura">☁️ Cloud & Infrastructure</h3>
+                <ul class="skills-list">
+                    <li class="animated-skill">AWS</li>
+                    <li class="animated-skill">Linux</li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3 data-en="📊 Monitoring & Observability" data-pl="📊 Monitoring i Obserwowalność">📊 Monitoring & Observability</h3>
+                <ul class="skills-list">
+                    <li class="animated-skill">Prometheus</li>
+                    <li class="animated-skill">Grafana</li>
+                    <li class="animated-skill">Kibana</li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3 data-en="🚀 DevOps & Automation" data-pl="🚀 DevOps i Automatyzacja">🚀 DevOps & Automation</h3>
+                <ul class="skills-list">
+                    <li class="animated-skill">Kubernetes</li>
+                    <li class="animated-skill">ArgoCD</li>
+                    <li class="animated-skill">CI/CD</li>
+                    <li class="animated-skill">GitHub</li>
+                    <li class="animated-skill">GitLab</li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3 data-en="💻 Development" data-pl="💻 Programowanie">💻 Development</h3>
+                <ul class="skills-list">
+                    <li class="animated-skill">Java</li>
+                    <li class="animated-skill">SQL</li>
+                    <li class="animated-skill">Web design</li>
+                    <li class="animated-skill">HTML/CSS</li>
+                    <li class="animated-skill">JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3 data-en="🔧 Tools & Methodologies" data-pl="🔧 Narzędzia i Metodyki">🔧 Tools & Methodologies</h3>
+                <ul class="skills-list">
+                    <li class="animated-skill">Confluence</li>
+                    <li class="animated-skill">Jira</li>
+                    <li class="animated-skill">Tableau</li>
+                    <li class="animated-skill">ServiceNow</li>
+                    <li class="animated-skill">ITIL certified</li>
+                </ul>
+            </div>
         </section>
         <section id="experience">
-            <h2>💼 Experience</h2>
+            <h2 data-en="💼 Experience" data-pl="💼 Doświadczenie">💼 Experience</h2>
             <ul class="experience-list">
                 <li class="job-item">
                     <div class="job-header">
@@ -70,14 +108,12 @@
                     </div>
                     <div class="job-description">
                         <div class="code-flow">
-                            <div class="code-line">• Resolving critical system outages efficiently by following established
-                                incident response processes.</div>
-                            <div class="code-line">• Monitoring and analyzing application logs to ensure system stability and
-                                performance.</div>
-                            <div class="code-line">• Deploying infrastructure and services changes.</div>
-                            <div class="code-line">• Keeping documentation accurate and up to date.</div>
-                            <div class="code-line">• Collaborating with L3 and Vendors to resolve application issues.</div>
-                            <div class="code-line">• Participating in weekly on-call rotations to provide 24/7 support.</div>
+                            <div class="code-line">• Resolving critical system outages by following established incident response processes</div>
+                            <div class="code-line">• Monitoring and analyzing application logs for system stability and performance optimization</div>
+                            <div class="code-line">• Deploying infrastructure and service changes with minimal downtime</div>
+                            <div class="code-line">• Maintaining accurate and up-to-date technical documentation</div>
+                            <div class="code-line">• Collaborating with L3 teams and vendors to resolve complex application issues</div>
+                            <div class="code-line">• Providing 24/7 support through weekly on-call rotations</div>
                         </div>
                     </div>
                 </li>
@@ -88,14 +124,11 @@
                     </div>
                     <div class="job-description">
                         <div class="code-flow">
-                            <div class="code-line">• Bug fixing, creating new backend and frontend features in web app
-                                applications</div>
-                            <div class="code-line">• Preparing application packages for deployments, certificate configuration
-                            </div>
-                            <div class="code-line">• Monitoring application logs and reviewing errors</div>
-                            <div class="code-line">• The creation of SQL scripts and views for business</div>
-                            <div class="code-line">• Creating technical documentation, functional specification, and keeping
-                                Confluence up to date</div>
+                            <div class="code-line">• Developing and fixing backend/frontend features in enterprise web applications</div>
+                            <div class="code-line">• Preparing application packages for production deployments and managing certificates</div>
+                            <div class="code-line">• Monitoring application logs and troubleshooting critical errors</div>
+                            <div class="code-line">• Creating SQL scripts, stored procedures, and database views for business requirements</div>
+                            <div class="code-line">• Writing technical documentation and maintaining Confluence knowledge base</div>
                         </div>
                     </div>
                 </li>
@@ -106,46 +139,74 @@
                     </div>
                     <div class="job-description">
                         <div class="code-flow">
-                            <div class="code-line">• Provide support for problems and incident management for international end
-                                users</div>
-                            <div class="code-line">• Working and communicating with business owners and 3rd Line Support
-                                Team members during the problem management life-cycle </div>
-                            <div class="code-line">• categorizing and prioritizing problems during the application management
-                                life cycle</div>
-                            <div class="code-line">• Monitoring the application's functioning</div>
-                            <div class="code-line">• Identification of workarounds and resolutions for problems</div>
-                            <div class="code-line">• Creating and documenting problem resolutions and workaround</div>
-                            <div class="code-line">• Granting permissions and analyzing data</div>
+                            <div class="code-line">• Managing incident and problem resolution for international end users</div>
+                            <div class="code-line">• Collaborating with business owners and L3 teams throughout the problem lifecycle</div>
+                            <div class="code-line">• Categorizing and prioritizing issues during application management</div>
+                            <div class="code-line">• Monitoring application performance and functionality</div>
+                            <div class="code-line">• Identifying and implementing workarounds for technical problems</div>
+                            <div class="code-line">• Documenting solutions and maintaining resolution knowledge base</div>
+                            <div class="code-line">• Managing user permissions and performing data analysis</div>
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
+        <section id="projects">
+            <h2 data-en="💻 Websites projects" data-pl="💻 Projekty stron">💻 Websites projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-img="projects-screenshots/lawyer-website.png" data-title="Lawyer Website">
+                    <img src="projects-screenshots/lawyer-website.png" alt="Lawyer Website" class="project-screenshot">
+                    <div class="project-overlay">
+                        <h3 data-en="Lawyer Website" data-pl="Strona Adwokata">Lawyer Website</h3>
+                        <p data-en="Click to preview" data-pl="Kliknij, aby zobaczyć">Click to preview</p>
+                    </div>
+                </div>
+                <div class="project-card" data-img="projects-screenshots/psychologist-website.png" data-title="Psychologist Website">
+                    <img src="projects-screenshots/psychologist-website.png" alt="Psychologist Website" class="project-screenshot">
+                    <div class="project-overlay">
+                        <h3 data-en="Psychologist Website" data-pl="Strona Psychologa">Psychologist Website</h3>
+                        <p data-en="Click to preview" data-pl="Kliknij, aby zobaczyć">Click to preview</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact">
-            <h2>✉️ Contact</h2>
+            <h2 data-en="✉️ Contact" data-pl="✉️ Kontakt">✉️ Contact</h2>
             <div class="contact-icons" align="center">
                 <a href="https://www.linkedin.com/in/jacek-flak/" target="_blank" class="contact-link animated-icon">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
                         width="150" height="150" alt="LinkedIn" class="icon" />
-                    <!-- <span>linkedin.com/in/jacek-flak</span> -->
                 </a>
-                <a href="mailto:jacek.flak.kontakt@gmail.com" class="contact-link animated-icon">
+                <a href="#" id="gmail-link" class="contact-link animated-icon">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" width="150"
                         height="150" alt="Gmail" class="icon" />
-                    <!-- <span>jacek.flak.kontakt@gmail.com</span> -->
                 </a>
                 <a href="https://github.com/JacekFlak" target="_blank" class="contact-link animated-icon">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="150"
                         height="150" alt="GitHub" class="icon" />
-                    <!-- <span>github.com/JacekFlak</span> -->
                 </a>
             </div>
         </section>
     </main>
     <footer>
-        <p>⚙️ This static website is hosted on AWS using Amazon S3, CloudFront and ACM ☁️</p>
-        <p>&copy; 2025 Jacek Flak. All rights reserved.</p>
+        <p data-en="⚙️ This static website is hosted on AWS using Amazon S3, CloudFront and ACM ☁️" data-pl="⚙️ Ta statyczna strona jest hostowana na AWS przy użyciu Amazon S3, CloudFront i ACM ☁️">⚙️ This static website is hosted on AWS using Amazon S3, CloudFront and ACM ☁️</p>
+        <p data-en="&copy; 2025 Jacek Flak. All rights reserved." data-pl="&copy; 2025 Jacek Flak. Wszelkie prawa zastrzeżone.">&copy; 2025 Jacek Flak. All rights reserved.</p>
     </footer>
+    <div id="email-popup" class="email-popup">
+        <div class="email-popup-content">
+            <span id="close-popup" class="close-popup">&times;</span>
+            <h3>📧 E-mail</h3>
+            <p class="email-address">jacek.flak.kontakt@gmail.com</p>
+            <button id="copy-email" class="copy-btn" data-en="📋 Copy" data-pl="📋 Kopiuj">📋 Copy</button>
+            <span id="copy-feedback" class="copy-feedback"></span>
+        </div>
+    </div>
+    <div id="project-popup" class="project-popup">
+        <span id="close-project-popup" class="close-popup">&times;</span>
+        <img id="project-popup-img" src="" alt="Project preview">
+        <h3 id="project-popup-title"></h3>
+    </div>
+    <button id="scroll-top" aria-label="Scroll to top">↑</button>
     <script src="script.js"></script>
 </body>
 </html>
