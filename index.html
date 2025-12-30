@@ -4,15 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jacek Flak - Support Engineer Specialist with 5+ years of IT experience in Big Pharma and automotive sectors. Expert in cloud technologies, DevOps, infrastructure-as-code, and web development.">
+    <meta name="keywords" content="Jacek Flak, Support Engineer, DevOps, AWS, Kubernetes, Cloud Engineer, SysOps, Infrastructure as Code, Web Development, Java, Python">
+    <meta name="author" content="Jacek Flak">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jacekflak.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jacekflak.com/">
+    <meta property="og:title" content="Jacek Flak - Support Engineer | DevOps | Cloud Specialist">
+    <meta property="og:description" content="Support Engineer Specialist with 5+ years of IT experience. Expert in cloud technologies, AWS, Kubernetes, and infrastructure automation.">
+    <meta property="og:image" content="https://jacekflak.com/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pl_PL">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jacekflak.com/">
+    <meta name="twitter:title" content="Jacek Flak - Support Engineer | DevOps | Cloud Specialist">
+    <meta name="twitter:description" content="Support Engineer Specialist with 5+ years of IT experience. Expert in cloud technologies, AWS, Kubernetes, and infrastructure automation.">
+    <meta name="twitter:image" content="https://jacekflak.com/og-image.png">
+    
     <title>Hello, nice to see you 👋</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2699.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
         rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jacek Flak",
+      "jobTitle": "Support Engineer Specialist",
+      "url": "https://jacekflak.com",
+      "email": "jacek.flak.kontakt@gmail.com",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Master of Science in Computer Science"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "ConSol Software GmbH"
+      },
+      "knowsAbout": ["AWS", "Kubernetes", "DevOps", "Linux", "Java", "Cloud Computing", "Infrastructure as Code", "Monitoring", "CI/CD"],
+      "sameAs": [
+        "https://www.linkedin.com/in/jacek-flak/",
+        "https://github.com/JacekFlak"
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <nav class="side-menu">
+    <div class="menu-overlay"></div>
+    <button id="hamburger-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="side-menu" role="navigation" aria-label="Main navigation">
         <ul>
             <li><a href="#about" data-en="About" data-pl="O mnie">About</a></li>           
             <li><a href="#skills" data-en="Skills" data-pl="Umiejętności">Skills</a></li>
@@ -21,7 +74,7 @@
             <li><a href="#contact" data-en="Contact" data-pl="Kontakt">Contact</a></li>
         </ul>
     </nav>
-    <header class="terminal-header">
+    <header class="terminal-header" role="banner">
         <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
         <button id="lang-toggle" aria-label="Toggle language"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f1f5-1f1f1.svg" alt="PL" class="flag-icon"></button>
         <div class="terminal-bar">
@@ -32,7 +85,7 @@
         <h1 class="typing">Jacek Flak</h1>
         <p class="subtitle">Developer | SysOps | Support Specialist</p>
     </header>
-    <main>
+    <main role="main">
         <section id="about">
             <h2 data-en="👤 About me" data-pl="👤 O mnie">👤 About me</h2>
             <p class="about-text about-para-1" data-en="I can confidently describe myself as a dedicated Support Engineer Specialist and a true team player, with over 5 years of IT experience in the Big Pharma industry and the last 2 years in the automotive sector. I have a Master of Science in Computer Science, and I'm an open-minded person who easily connects with others, enjoys meeting new people, and values teamwork. In today's world shaped by AI and automation, I truly believe that strong soft skills are just as essential as technical expertise." data-pl="Mogę śmiało opisać siebie jako oddanego specjalistę ds. wsparcia technicznego i prawdziwego gracza zespołowego, z ponad 5-letnim doświadczeniem w branży Big Pharma i ostatnimi 2 latami w sektorze motoryzacyjnym. Posiadam tytuł magistra informatyki i jestem osobą otwartą, która łatwo nawiązuje kontakty, lubi poznawać nowych ludzi i ceni pracę zespołową. W dzisiejszym świecie kształtowanym przez AI i automatyzację wierzę, że umiejętności miękkie są równie ważne jak wiedza techniczna.">I can confidently describe myself as a dedicated Support Engineer Specialist and a true team player,
@@ -99,7 +152,7 @@
             </div>
         </section>
         <section id="experience">
-            <h2 data-en="💼 Experience" data-pl="💼 Doświadczenie">💼 Experience</h2>
+            <h2 data-en="💼 Experience" data-pl="💼 Doświadczenie zawodowe">💼 Work experience</h2>
             <ul class="experience-list">
                 <li class="job-item">
                     <div class="job-header">

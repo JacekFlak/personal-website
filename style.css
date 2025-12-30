@@ -37,6 +37,53 @@ body {
     --error: #EF4444;
 }
 
+#hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: var(--gray2);
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(34, 211, 238, 0.08);
+    transition: background 0.3s, transform 0.2s;
+}
+
+#hamburger-menu:hover {
+    background: var(--gray);
+    transform: scale(1.05);
+}
+
+#hamburger-menu span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+#hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+#hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
 .side-menu {
     position: fixed;
     top: 50%;
@@ -111,8 +158,8 @@ body {
 
 #lang-toggle {
     position: fixed;
-    top: 4rem;
-    right: 2rem;
+    top: 1.2rem;
+    right: 5rem;
     background: var(--gray2);
     color: var(--accent);
     border: none;
@@ -774,17 +821,51 @@ footer {
         font-size: 1.5rem;
     }
 
-    .side-menu {
-        opacity: 0.5;
-        padding: 0.3rem 0.3rem 0.3rem 0.8rem;
+    #hamburger-menu {
+        display: flex;
     }
 
-    .side-menu a {
-        font-size: 0.85rem;
+    .terminal-header {
+        position: sticky;
+        top: 0;
+        z-index: 998;
+    }
+
+    .side-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        transform: none;
+        background: var(--gray);
+        border-radius: 0;
+        padding: 5rem 1.5rem 2rem 1.5rem;
+        opacity: 1;
+        transition: left 0.3s ease-in-out;
+        overflow-y: auto;
+    }
+
+    .side-menu.active {
+        left: 0;
+    }
+
+    .side-menu:hover {
+        transform: none;
+    }
+
+    .side-menu ul {
+        text-align: left;
     }
 
     .side-menu li {
-        margin-bottom: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .side-menu a {
+        font-size: 1.1rem;
+        display: block;
+        padding: 0.5rem 0;
     }
 
     .contact-icons {
@@ -951,4 +1032,22 @@ footer {
     color: var(--accent-green);
     font-size: 0.9rem;
     height: 1.2rem;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-overlay.active {
+    display: block;
+    opacity: 1;
 }

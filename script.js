@@ -13,6 +13,32 @@ if (typing) {
     type();
 }
 
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const sideMenu = document.querySelector('.side-menu');
+const menuOverlay = document.querySelector('.menu-overlay');
+
+if (hamburgerMenu && sideMenu && menuOverlay) {
+    hamburgerMenu.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('active');
+        sideMenu.classList.toggle('active');
+        menuOverlay.classList.toggle('active');
+    });
+
+    menuOverlay.addEventListener('click', () => {
+        hamburgerMenu.classList.remove('active');
+        sideMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+    });
+
+    sideMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburgerMenu.classList.remove('active');
+            sideMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+        });
+    });
+}
+
 const themeToggle = document.getElementById('theme-toggle');
 if (themeToggle) {
     themeToggle.textContent = '🌙';
