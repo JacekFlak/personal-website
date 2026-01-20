@@ -177,8 +177,27 @@ const closeProjectPopup = document.getElementById('close-project-popup');
 if (projectPopup) {
     projectCards.forEach(card => {
         card.addEventListener('click', () => {
-            const imgSrc = card.getAttribute('data-img');
             const title = card.getAttribute('data-title');
+            
+            // Redirect to external site for Lawyer Website
+            if (title === 'Lawyer Website') {
+                window.open('https://adwokat-adamczyk-flak.pl', '_blank');
+                return;
+            }
+            
+            // Redirect to external site for FPL Statistics
+            if (title === 'FPL Statistics') {
+                window.open('https://jacekflak.github.io/fpl-stats/', '_blank');
+                return;
+            }
+            
+            // Redirect to external site for Doctor Website
+            if (title === 'Doctor Website') {
+                window.open('https://jacekflak.github.io/doctor-website', '_blank');
+                return;
+            }
+            
+            const imgSrc = card.getAttribute('data-img');
             projectPopupImg.src = imgSrc;
             projectPopupTitle.textContent = title;
             projectPopup.classList.add('active');
