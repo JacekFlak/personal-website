@@ -197,6 +197,18 @@ if (projectPopup) {
                 return;
             }
             
+            // Redirect to external site for Cafe Website
+            if (title === 'Cafe Website') {
+                window.open('https://jacekflak.github.io/cafe-website/', '_blank');
+                return;
+            }
+            
+            // Redirect to external site for Dermatology Office
+            if (title === 'Dermatology Office') {
+                window.open('https://jacekflak.github.io/derma-office-website/', '_blank');
+                return;
+            }
+            
             const imgSrc = card.getAttribute('data-img');
             projectPopupImg.src = imgSrc;
             projectPopupTitle.textContent = title;
